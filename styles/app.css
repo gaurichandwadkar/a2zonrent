@@ -1,0 +1,36 @@
+.mainDiv
+{
+	margin:auto;
+	width:500px;
+	
+}
+.loginDiv
+{
+	border:0.5px solid lightblue;
+	width:400px;
+	max-height:400px;
+	text-align:center;
+}
+
+.submitFormDiv
+{
+	border: 0.5px solid lightblue;
+	width:400px;
+	max-height:400px;
+    text-align: center;
+    padding: 5px;
+}
+.submitFormDiv label
+{
+	width: 100px;
+	text-align:left;
+}
+.errorMessage
+{
+	color:red;
+}
+.homeDiv
+{
+	margin:20px;
+	width:500px;
+}

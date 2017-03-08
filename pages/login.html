@@ -1,0 +1,13 @@
+<form ng-submit="submit()" class="submitFormDiv">
+	<h4>Sign in to continue to a2zOnRent</h4>
+	<br/>
+	<label >UserName </label> <input type="text" ng-model="username" placeholder="username" required></input>
+	<br/>
+	<label>Password</label> <input type="password" ng-model="password" placeholder="password" required></input>
+	<br/>
+	<button class="btn btn-primary" type="submit">Login</button>
+	<br/>
+	New User? <a href="#/signup">Register</a>
+	<br/>
+	<p class="errorMessage">{{ message }}</p>
+</form>

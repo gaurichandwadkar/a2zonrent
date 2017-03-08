@@ -1,0 +1,22 @@
+<div class="submitFormDiv">
+<h4>{{message1}}</h4>
+<div ng-show="registrationSuccess==true"> Please go to <a href="#/login">Login</a> and sign in with your credentials.</div>
+<div ng-show="updateSuccessful==true"> Return to <a href="#/">Home</a> page</div>
+<form  ng-submit="submit()" ng-show="registrationSuccess==false">
+	<label>UserName</label><input type="text"  ng-model="user.username" placeholder="username" required/>
+	<br/>
+	<label>First Name</label><input type="text" ng-model="user.firstname" placeholder="first name"/>
+	<br/>
+	<label>Last Name</label><input type="text" ng-model="user.lastname" placeholder="last name"/>
+	<br/>
+	<label>Email</label><input type="email" ng-model="user.email" placeholder="email" required/>
+	<br/>
+	<label ng-hide="loggedIn==true">Password</label><input type="password" ng-model="user.password" ng-hide="loggedIn==true" placeholder="password" required/>
+	<br/>
+	<button type="submit" class="btn btn-primary">{{btnText}}</button>
+	<button class="btn btn-primary" ng-click="cancel()">Cancel</button>
+	<br/>
+	<p class="errorMessage">{{message}}</p>
+	
+</form>
+</div>
